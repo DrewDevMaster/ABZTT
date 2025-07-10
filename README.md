@@ -14,9 +14,8 @@
 **Usage**
 
 - Используем LaunchScreen + SplashScreen для отображения анимации и добавления пространства где паралельно конфигурируем апкку
-- Радиокнопки кэшируем в файл менеджере JSONCacheManager + запрашиваем в high что бы максимально быстро получить
 - Используем цвета  + сразу из ресурсов иконки Color(.primary) +  Image(.splashScreenIcon)
-- Кешируем position ответ для быстрой отрисовки и используем фал менеджер и сохранить в файл
+- Кешируем position ответ для быстрой отрисовки и используем фаил менеджер JSONCacheManager и сохранить в файл + запрашиваем в high что бы максимально быстро получить
 - Делаем preloadCachedImages для быстрого холодного старта
 - После регистрации, берем ид из ответа, загружаем по нему инфу, используем UserEventService + Combine для отправки нового юзера в UsersViewModel. Там добавляем его в отдельный массив и комбинируем его в Publishers.CombineLatest($allUsers, $manuallyAddedUsers).assign(to: &$displayedUsers)
 - Тестируем NetworkMonitor. Находим класс MockNetworkMonitor. Там DI + mock + preview
