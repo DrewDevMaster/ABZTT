@@ -24,8 +24,8 @@
 
 **Dependency**
 
-KingFisher - обеспечил классный performance + UX загружая и кэшируя изображения
-Alamofine + swiftyJson - необходимы для работы нетворк менеджера
+- KingFisher - обеспечил классный performance + UX загружая и кэшируя изображения
+- Alamofine + swiftyJson - необходимы для работы нетворк менеджера
 
 **Notes** 
 
